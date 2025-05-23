@@ -174,15 +174,14 @@ header nav{
 /* parte da foto do time*/
 .fototime img {
     
-    max-width: 600px;
+     width: 75vw;
+    max-width: 1100px;
     height: auto;
     margin-top: 40px;
     margin-bottom: 60px;
     border-radius: 12px;
     transition: transform 0.3s ease;
     transform-origin: center center;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 .fototime img:hover {
@@ -635,7 +634,6 @@ animation: twinkle 3s infinite ease-in-out;
 .star:nth-child(98) { top: 42%; left: 83%; animation-delay: 0.7s; }
 .star:nth-child(99) { top: 14%; left: 36%; animation-delay: 0.3s; }
 .star:nth-child(100) { top: 31%; left: 36%; animation-delay: 0.8s; }
-
 
 @keyframes twinkle {
 0%, 100% {
