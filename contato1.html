@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entre em Contato!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #2b0a53;
+      background-image: url('fotos/Logo_OCTOBIT_Logo_Preto_SIMBOLO.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #3b0d77;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #3b0d77;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .voltarmenu {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .voltarmenu a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    .voltarmenu a:hover {
+      color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contato</h1>
+    <p>Preencha os campos abaixo:</p>
+
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+
+      <div class="form-group">
+        <label for="Opcao">Qual o motivo do contato:<br></a>
+          <select name="Opcao">
+            <option value="Selecione">Selecione</option>
+            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+            <option value="Sistema">Sistema</option>
+            <option value="Aplicativo">Aplicativo</option>
+            <option value="Outro">Outro</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Como podemos te ajudar?</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+      </div>
+
+      <button type="submit">ENVIAR</button>
+    </form>
+
+    <div class="voltarmenu">
+      <a href="home.html">Voltar ao menu</a>
+    </div>
+  </div>
+</body>
+</html>
